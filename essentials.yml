@@ -10,6 +10,6 @@ ath:
   # No ATH docker image with Java11 so far
   jdk: 11
   failFast: true
-
+  useLocalSnapshots: false
   browsers:
     - firefox

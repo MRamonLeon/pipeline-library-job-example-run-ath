@@ -9,9 +9,7 @@ node {
 
     stage ("ATH") {
         node {
-        environment {
-            RUN_ATH_LOCAL_PLUGINS_STASH_NAME = false
-        } 
+      
         runATH metadataFile: checkoutDir + "/essentials.yml"
         }
     }
