@@ -1,3 +1,5 @@
-node {
-   runATH metadataFile: "essentials.yml"
+stage ("ATH") {
+    node {
+       runATH metadataFile: "essentials.yml"
+    }
 }
