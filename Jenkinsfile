@@ -1,11 +1,15 @@
+#!/usr/bin/env groovy 
 node {
+    def checkoutDir = pwd(tmp:true) + "/dir"
     stage("Checkout") {
-    checkout scm
+        dir(checkoutDir) {
+            checkout scm
+        }
     }
 
     stage ("ATH") {
         node {
-        runATH metadataFile: pwd() + "/essentials.yml"
+        runATH metadataFile: checkoutDir + "/essentials.yml"
         }
     }
 }
