@@ -5,7 +5,7 @@ node {
 
     stage ("ATH") {
         node {
-        runATH metadataFile: pwd() + "essentials.yml"
+        runATH metadataFile: pwd() + "/essentials.yml"
         }
     }
 }
