@@ -1,9 +1,11 @@
-stage("Checkout") {
+node {
+    stage("Checkout") {
     checkout scm
-}
+    }
 
-stage ("ATH") {
-    node {
-       runATH metadataFile: "essentials.yml"
+    stage ("ATH") {
+        node {
+        runATH metadataFile: "essentials.yml"
+        }
     }
 }
