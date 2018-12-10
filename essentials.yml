@@ -1,0 +1,15 @@
+---
+ath:
+  #---athRevision: "dad333092159cb368efc2f9869572f0a05d255ac"
+  # No ATH docker image with Java11 so far
+  athImage: "local"
+ # athRevision: master
+  athUrl: "file:///home/rleon/develop/projects/acceptance-test-harness"
+  #jenkins: "2.122"
+  jenkins: "latest"
+  # No ATH docker image with Java11 so far
+  jdk: 11
+  failFast: true
+
+  browsers:
+    - firefox
