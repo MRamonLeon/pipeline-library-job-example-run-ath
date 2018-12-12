@@ -1,15 +1,26 @@
 ---
 ath:
+  
+  
+  # Use my own image, without checking out and building 
+  athImage: "jenkins/ath:ramon"
+
+  #athImage: "local"
   #---athRevision: "dad333092159cb368efc2f9869572f0a05d255ac"
-  # No ATH docker image with Java11 so far
-  athImage: "local"
- # athRevision: master
-  athUrl: "file:///home/rleon/develop/projects/acceptance-test-harness"
+  # athRevision: master
+  #As we are using athImage not local, it doesn't 
+  #athUrl: "file:///home/rleon/develop/projects/acceptance-test-harness"
+  
+  #Use local jenkins to avoid downloading it
   #jenkins: "2.122"
-  jenkins: "latest"
-  # No ATH docker image with Java11 so far
+  #jenkins: "latest"
+  jenkins: "file:///home/rleon/develop/servers/OSS/LTS/2.153/jenkins.war"
+
+  #jdks to compile
   jdk: 11
+
   failFast: true
   useLocalSnapshots: false
+  
   browsers:
     - firefox
