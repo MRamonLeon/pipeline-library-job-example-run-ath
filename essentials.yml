@@ -8,8 +8,10 @@ ath:
   #athImage: "local"
   #---athRevision: "dad333092159cb368efc2f9869572f0a05d255ac"
   # athRevision: master
-  #As we are using athImage not local, it doesn't 
-  #athUrl: "file:///home/rleon/develop/projects/acceptance-test-harness"
+  #Even though we are using an ath image, we need to give the athUrl because it's where
+  #the files will be checked out in order to be used as workspace for the docker container,
+  #that is, run.sh, ath-container.sh, eval.sh, set-java.sh
+  athUrl: "file:///home/rleon/develop/projects/acceptance-test-harness"
   
   #Use local jenkins to avoid downloading it
   #jenkins: "2.122"
