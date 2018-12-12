@@ -17,7 +17,8 @@ ath:
   jenkins: "file:///home/rleon/develop/servers/OSS/LTS/2.153/jenkins.war"
 
   #jdks to compile
-  jdk: 11
+  jdks: 
+    - 11
 
   failFast: true
   useLocalSnapshots: false
