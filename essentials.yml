@@ -21,6 +21,9 @@ ath:
   #jdks to compile
   jdks: 
     - 11
+    - 8
+    - 9
+    - badjavaversion
 
   failFast: true
   useLocalSnapshots: false
