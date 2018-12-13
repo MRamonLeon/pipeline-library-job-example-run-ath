@@ -22,8 +22,6 @@ ath:
   jdks: 
     - 11
     - 8
-    - 9
-    - badjavaversion
 
   failFast: false
   useLocalSnapshots: false
