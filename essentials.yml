@@ -25,8 +25,11 @@ ath:
     - 9
     - badjavaversion
 
-  failFast: true
+  failFast: false
   useLocalSnapshots: false
   
   browsers:
     - firefox
+
+  tests:
+    - ViewTest#renameJob
