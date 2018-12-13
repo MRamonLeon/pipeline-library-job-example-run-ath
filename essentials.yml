@@ -3,11 +3,14 @@ ath:
   
   
   # Use my own image, without checking out and building 
-  athImage: "jenkins/ath:ramon"
+  #athImage: "jenkins/ath:ramon"
 
-  #athImage: "local"
+  # Use this keyword (local) to build the image from the athUrl directory
+  athImage: "local"
+  
   #---athRevision: "dad333092159cb368efc2f9869572f0a05d255ac"
-  # athRevision: master
+  #athRevision: master
+ 
   #Even though we are using an ath image, we need to give the athUrl because it's where
   #the files will be checked out in order to be used as workspace for the docker container,
   #that is, run.sh, ath-container.sh, eval.sh, set-java.sh
